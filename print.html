@@ -1002,6 +1002,73 @@ $$
 $$
 </div>
 </div>
+<h3 id="四乘法与因式分解公式"><a class="header" href="#四乘法与因式分解公式">四、乘法与因式分解公式</a></h3>
+<div style=display:flex;>
+<div>
+$$
+\begin{aligned}
+&(x+a)(x+b)=x^{2}+(a+b) x+a b \\
+&(a \pm b)^{2}=a^{2} \pm 2 a b+b^{2} \\
+&(a \pm b)^{3}=a^{3} \pm 3 a^{2} b+3 a b^{2} \pm b^{3} \\
+&a^{2}-b^{2}=(a-b)(a+b) \\
+&a^{3} \pm b^{3}=(a \pm b)\left(a^{2} \mp a b+b^{2}\right) \\
+&a^{n}-b^{n}=(a-b)\left(a^{n-1}+a^{n-2} b+a^{n-3} b^{2}+\cdots+a b^{n-2}+b^{n-1}\right) \quad(n \text { 为正整数 }) \\
+&a^{n}-b^{n}=(a+b)\left(a^{n-1}-a^{n-2} b+a^{n-3} b^{2}-\cdots+a b^{n-2}-b^{n-1}\right) \quad(n \text { 为偶数 }) \\
+&a^{n}+b^{n}=(a+b)\left(a^{n-1}-a^{n-2} b+a^{n-3} b^{2}-\cdots-a b^{n-2}+b^{n-1}\right) \quad(n \text { 为奇数 }) \\
+&(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+2 a b+2 b c+2 c a \\
+&a^{3}+b^{3}+c^{3}-3 a b c=(a+b+c)\left(a^{2}+b^{2}+c^{2}-a b-b c-c a\right)
+\end{aligned}
+$$
+</div>
+</div>
+<h3 id="五分式"><a class="header" href="#五分式">五、分式</a></h3>
+<h3 id="1分式运算"><a class="header" href="#1分式运算">1.分式运算</a></h3>
+<p>$$
+\begin{array}{ll}
+\frac{a}{b} \pm \frac{c}{b}=\frac{a \pm c}{b} &amp; \frac{a}{b}+\frac{c}{d}=\frac{a d \pm b c}{b d} \\
+\frac{a}{b} \cdot \frac{c}{d}=\frac{a c}{b d} &amp; \frac{a}{b} \div \frac{c}{d}=\frac{a d}{b c} \\
+\left(\frac{a}{b}\right)^{n}=\frac{a^{n}}{b^{n}} &amp; \sqrt[n]{\frac{a}{b}}=\frac{\sqrt[n]{a}}{\sqrt[n]{b}}(a&gt;0, b&gt;0)
+\end{array}
+$$</p>
+<h3 id="2部分分式"><a class="header" href="#2部分分式">2.部分分式</a></h3>
+<p>任一既约真分式(分子与分母没有公因子，分子次数低于分母次数)都可唯一地分解成形如 \(\frac{A}{(x-a)^{k}} \text { 或 } \frac{a x+b}{\left(x^{2}+p x+q\right)^{l}}\left(\text { 其中 } \frac{p^{2}}{4}-q&lt;0\right)\)  的基本真分式之和，其运算称为部分分式展开. 若为假分式(分子次数不低于分母次数)，应先化为整式与真分式之和，然后再对真分式进行部分分式展开. 部分分式的各个系数可以通过待定系数法来确定. 下面分几种不同情况介绍.</p>
+<p>设</p>
+<p>$$
+N(x)=n_{0}+n_{1} x+n_{2} x^{2}+\cdots+n_{r} x^{r}
+$$</p>
+<p>$$
+G(x)=g_{0}+g_{1} x+g_{2} x^{2}+\cdots+g_{s} x^{s}
+$$</p>
+<p>[线性因子重复]</p>
+<p>1°  \(\frac{N(x)}{(x-a)^{m}}=\frac{A_{0}}{(x-a)^{m}}+\frac{A_{1}}{(x-a)^{m-1}}+\cdots+\frac{A_{m-1}}{x-a}\)</p>
+<p>式中\(N_{x}\)的最高次数 r≤m-1；\(A_{0}\)，\(A_{1}\)，...，\(A_{m-1}\) 为待定常数，可由下式确定：</p>
+<div>
+$$
+A_{0}=[N(x)]_{x=a}, \quad A_{k}=\frac{1}{k !}\left[\frac{d^{k} N(x)}{d x^{k}}\right]_{x=u} \quad(k=1,2, \cdots, m-1)
+$$
+</div>
+<p>2°  \(\frac{N(x)}{x^{m} G(x)}=\frac{A_{0}}{x^{m}}+\frac{A_{1}}{x^{m-1}}+\cdots+\frac{A_{m-1}}{x}+\frac{F(x)}{G(x)}\)</p>
+<p>式中(A_{0}\)，\(A_{1}\)，...，\(A_{m}\)为待定常数，可由下式确定：</p>
+<p>$$
+\begin{aligned}
+&amp;A_{0}=\frac{n_{0}}{g_{0}}, \quad A_{j}=\frac{1}{g_{0}}\left(n_{j}-\sum_{i=0}^{j-1} A_{i} g_{j-i}\right) \quad(j=1,2, \cdots, m-1) \\
+&amp;F(x)=f_{0}+f_{1} x+f_{2} x^{2}+\cdots+f_{k} x^{k}, k \leqslant s-1
+\end{aligned}
+$$</p>
+<p>其系数\(f_{j}\)与 m 有关，由下表确定：</p>
+<div>
+$$
+\begin{array}{c|l}
+\hline m & {}{f_{j} \quad(j=0,1,2, \cdots, k ; k \leqslant s-1)} \\
+\hline 1 & f_{j}=n_{j+1}-A_{0} g_{j+1} \\
+2 & f_{j}=n_{j+2}-\left(A_{0} g_{j+2}+A_{1} g_{j+1}\right) \\
+3 & f_{j}=n_{j+3}-\left(A_{0} g_{j+3}+A_{1} g_{j+2}+A_{2} g_{j+1}\right) \\
+\vdots & \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \\
+m & f_{j}=n_{j+m}-\sum_{i=0}^{m-1} A_{i} g_{j+n-i} \\
+\hline
+\end{array}
+$$
+</div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第二章--初等几何图形的计算与作图"><a class="header" href="#第二章--初等几何图形的计算与作图">第二章  初等几何图形的计算与作图</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第三章-代-数-方-程"><a class="header" href="#第三章-代-数-方-程">第三章 代 数 方 程</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第四章-矩阵----行列式----线性方程组"><a class="header" href="#第四章-矩阵----行列式----线性方程组">第四章 矩阵  ·  行列式  ·  线性方程组</a></h1>
