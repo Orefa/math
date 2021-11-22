@@ -633,7 +633,7 @@ z_{1}^{n}=r_{1}^{n}\left(\cos n \theta_{1}+i \sin n \theta_{1}\right)
 $$</p>
 <p>当\(r_{1}=1\)时，得\((\cos \theta_{1}+i \sin \theta_{1})^n=\cos n\theta_{1}+i \sin n\theta_{1}\)，这个公式叫做德·莫弗公式.</p>
 <p>$$
-z_{1}^{\frac{1}{n}}=r_{1}^{\frac{1}{n}}\left(\cos \frac{\theta_{1}+2 k \pi}{n}+i \sin \frac{\theta_{1}+2 k \pi}{n}\right) \quad(k=0,1,2, \cdots \mid, n-1)
+z_{1}^{\frac{1}{n}}=r_{1}^{\frac{1}{n}}\left(\cos \frac{\theta_{1}+2 k \pi}{n}+i \sin \frac{\theta_{1}+2 k \pi}{n}\right) \quad(k=0,1,2, \cdots, n-1)
 $$</p>
 <p>[指数式运算] 设</p>
 <p>$$
@@ -667,7 +667,7 @@ $$</p>
 <p>等差中项 \(a_{k}=\frac{a_{k-1}+a_{k+1}}{2} \quad(k&gt;1)\)</p>
 <h4 id="3等比数列与等比几何级数"><a class="header" href="#3等比数列与等比几何级数">3．等比数列与等比（几何）级数</a></h4>
 <p>$$
-a_{1}, a_{1} q, a_{1} q^{2}, a_{1} q^{3}, \cdots \quad(q \mid \text { 为常数 })
+a_{1}, a_{1} q, a_{1} q^{2}, a_{1} q^{3}, \cdots \quad(q \text { 为常数 })
 $$</p>
 <p>称为公比为 q 的等比数列.与等比数列相应的级数称为等比级数，又称几何级数.</p>
 <p>通项公式 \(a_{n}=a_{1} q^{n-1}\)</p>
@@ -720,7 +720,140 @@ $$</p>
 <p>$$
 S_{n}=n a_{1}+\frac{n(n-1)}{2 !} d_{1}+\frac{n(n-1)(n-2)}{3 !} d_{2}+\cdots+\frac{n(n-1)(n-2) \cdots(n-r)}{(r+1) !} d_{r}
 $$</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="第二章--初等几何图形的计算与作图"><a class="header" href="#第二章--初等几何图形的计算与作图">第二章  初等几何图形的计算与作图</a></h1>
+<h4 id="7某些级数的部分和"><a class="header" href="#7某些级数的部分和">7．某些级数的部分和</a></h4>
+<div style=display:flex;>
+<div>
+$$
+1+2+3+\cdots+n=\frac{1}{2} n(n+1)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{2}+2^{2}+3^{2}+\cdots+n^{2}=\frac{1}{6} n(n+1)(2 n+1)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{3}+2^{3}+3^{3}+\cdots+n^{3}=\frac{1}{4} n^{2}(n+1)^{2}
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{4}+2^{4}+3^{4}+\cdots+n^{4}=\frac{1}{30} n(n+1)(2 n+1)\left(3 n^{2}+3 n-1\right)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{5}+2^{5}+3^{5}+\cdots+n^{5}=\frac{1}{12} n^{2}(n+1)^{2}\left(2 n^{2}+2 n-1\right)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{6}+2^{6}+3^{6}+\cdots+n^{6}=\frac{1}{42} n(n+1)(2 n+1)\left(3 n^{4}+6 n^{3}-3 n+1\right)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{7}+2^{7}+3^{7}+\cdots+n^{7}=\frac{1}{24} n^{2}(n+1)^{2}\left(3 n^{4}+6 n^{3}-n^{2}-4 n+2\right)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1-2+3-\cdots+(-1)^{n-1} n= \begin{cases}\frac{1}{2}(n+1), & n \text { 为奇数 } \\\\ -\frac{n}{2}, & n \text { 为偶数 }\end{cases}
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{2}-2^{2}+3^{2}-\cdots+(-1)^{n-1} n^{2}=(-1)^{n-1} \frac{1}{2} n(n+1)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{3}-2^{3}+3^{3}-\cdots+(-1)^{n-1} n^{3}= \begin{cases}\frac{1}{4}(2 n-1)(n+1)^{2} & n \text { 为奇数 } \\\\ -\frac{1}{4} n^{2}(2 n+3), & n \text { 为偶数 }\end{cases}
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{4}-2^{4}+3^{4}-\cdots+(-1)^{n-1} n^{4}=(-1)^{n-1} \frac{1}{2} n(n+1)\left(n^{2}+n-1\right)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+2+4+6+\cdots+2 n=n(n+1)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1+3+5+\cdots+(2 n-1)=n^{2}
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{2}+3^{2}+5^{2}+\cdots+(2 n-1)^{2}=\frac{1}{3} n\left(4 n^{2}-1\right)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1^{3}+3^{3}+5^{3}+\cdots+(2 n-1)^{3}=n^{2}\left(2 n^{2}-1\right)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1 \cdot 2+2 \cdot 3+3 \cdot 4+\cdots+n(n+1)=\frac{1}{3} n(n+1)(n+2) 
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1 \cdot 2 \cdot 3+2 \cdot 3 \cdot 4+3 \cdot 4 \cdot 5+\cdots+n(n+1)(n+2)=\frac{1}{4} n(n+1)(n+2)(n+3)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+1 \cdot 2 \cdot 3 \cdot 4+2 \cdot 3 \cdot 4 \cdot 5+\cdots+n(n+1)(n+2)(n+3)=\frac{1}{5} n(n+1)(n+2)(n+3)(n+4)
+$$
+</div>
+</div>
+<div style=display:flex;>
+<div>
+$$
+\sum_{j=1}^{n} j(j+1) \cdots(j+k)=\frac{1}{k+2} \frac{(n+k+1) !}{(n-1) !}
+$$
+</div>
+<div><div style="break-before: page; page-break-before: always;"></div><h1 id="第二章--初等几何图形的计算与作图"><a class="header" href="#第二章--初等几何图形的计算与作图">第二章  初等几何图形的计算与作图</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第三章-代-数-方-程"><a class="header" href="#第三章-代-数-方-程">第三章 代 数 方 程</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第四章-矩阵----行列式----线性方程组"><a class="header" href="#第四章-矩阵----行列式----线性方程组">第四章 矩阵  ·  行列式  ·  线性方程组</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第五章---微--分--学"><a class="header" href="#第五章---微--分--学">第五章   微  分  学</a></h1>
