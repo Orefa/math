@@ -1015,6 +1015,37 @@ m & f_{j}=n_{j+m}-\sum_{i=0}^{m-1} A_{i} g_{j+n-i} \\
 \end{array}
 $$
 </div>
+<p>例</p>
+<p>$$
+\frac{x^{2}+1}{x^{3}\left(x^{2}-3 x+6\right)}=\frac{A_{0}}{x^{3}}+\frac{A_{1}}{x^{2}}+\frac{A_{2}}{x}+\frac{f_{1} x+f_{0}}{x^{2}-3 x+6}
+$$</p>
+<p>解 依上述公式算出</p>
+<p>$$
+\begin{aligned}
+&amp;A_{0}=\frac{n_{0}}{g_{0}}=\frac{1}{6} \quad A_{1}=\frac{1}{g_{0}}\left(n_{1}-A_{0} g_{1}\right)=\frac{1}{6}\left[0-\frac{1}{6} \times(-3)\right]=\frac{1}{12} \\
+&amp;A_{2}=\frac{1}{g_{0}}\left(n_{2}-A_{0} g_{2}-A_{1} g_{1}\right)=\frac{1}{6}\left[1-\frac{1}{6} \times 1-\frac{1}{12} \times(-3)\right]=\frac{13}{72}
+\end{aligned}
+$$</p>
+<p>此时 m=3，</p>
+<p>$$
+\begin{aligned}
+&amp;f_{0}=n_{3}-\left(A_{0} g_{3}+A_{1} g_{2}+A_{2} g_{1}\right)=0-\left[\frac{1}{6} \times 0+\frac{1}{12} \times 1+\frac{13}{72} \times(-3)\right]=\frac{33}{72} \\
+&amp;f_{1}=n_{4}-\left(A_{0} g_{4}+A_{1} g_{3}+A_{2} g_{2}\right)=0-\left(0+0+\frac{13}{72} \times 1\right)=-\frac{13}{72}
+\end{aligned}
+$$</p>
+<p>所以得到</p>
+<p>$$
+\frac{x^{2}+1}{x^{3}\left(x^{2}-3 x+6\right)}=\frac{1}{6 x^{3}}+\frac{1}{12 x^{2}}+\frac{13}{72 x}+\frac{-13 x+33}{72\left(x^{2}-3 x+6\right)}
+$$</p>
+<p>3°   \(\frac{N(x)}{(x-a)^{m} G(x)}=\frac{A_{0}}{(x-a)^{m}}+\frac{A_{1}}{(x-a)^{m-1}}+\frac{A_{2}}{(x-a)^{m-2}}+\cdots+\frac{A_{m-1}}{x-a}+\frac{F(x)}{G(x)}\)</p>
+<p>作变换 \(y=x-a\), 则 \(N(x)=N_{1}(y), G(x)=G_{1}(y)\), 上式变为
+$$
+\frac{N_{1}(y)}{y^{m} G_{1}(y)}=\frac{A_{0}}{y^{m}}+\frac{A_{1}}{y^{m-1}}+\frac{A_{2}}{y^{m-2}}+\cdots+\frac{A_{m-1}}{y}+\frac{F_{1}(y)}{G_{1}(y)}
+$$</p>
+<p>用上述1°，2°的方法确定出\(A_{0}, A_{1}, \cdots, A_{m-1}\)和\(F_{1}(y)\)，再将\(y=x-a\)代回. 也可按下式来确定系数\(A_{0}, A_{1}, \cdots, A_{m-1}\)：</p>
+<p>$$
+A_{k}=\frac{1}{k !}\left[\frac{d^{k}}{d x^{k}}\left(\frac{N(x)}{G(x)}\right)\right]_{x-a} \quad(k=0,1,2, \cdots, m-1)
+$$</p>
 
                     </main>
 
